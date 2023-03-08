@@ -1,0 +1,170 @@
+@import 'compass/css3';
+
+  
+  #logo{ left:50%; top:50%; position:absolute; border-radius:10px; }
+
+#theSvg {
+	width: 110vmin;
+    height: 200vmin;
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 20%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+text {
+	fill: #fda091;
+	font-family: consolas;
+	font-size: 10px;
+    font-weight: 60px;
+}
+p {
+	position: absolute;
+	z-index: 2;
+}
+label {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	opacity: .8;
+}
+
+
+ 
+body{
+    padding:0;
+    background-color: black;
+}
+.face{
+    position: absolute;
+    height: 160px;
+    width: 135px;
+    background-color: #f9ebea;
+    border: 2px solid #6e2c00;
+    border-radius: 50% 50% 45% 45%;
+    top: 30%;
+    left: 45%;
+}
+.e1{
+    position: relative;
+    height: 15px;
+    width: 10px;
+    background-color: #6e2c00;
+    border-radius: 50%;
+    top: 40%;
+    left: 30%;
+}
+.e2{
+    position: relative;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    top: -12%;
+    left: 12%;
+    font-weight: bolder;
+}
+.m{
+    height: 15px;
+    width: 8px;
+    position: relative;
+    background-color: #ec7063;
+    border-radius: 0 0 50% 50%;
+    top: 27%;
+    border: 1px solid #6e2c00;
+    left: 45%;
+}
+.h1 , .h2{
+    position: relative;
+    height: 15px;
+    width: 10px;
+    border: 2px solid #6e2c00;
+    border-radius: 50% 50% 0 0;
+    border-bottom-color: transparent;
+    float: left;
+    top: 20%;
+    left: 20%;
+}
+.h1{
+    transform: rotate(45deg);
+}
+.h2{
+    left: 55%;
+    transform: rotate(-45deg);
+}
+.er, .el{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 250px 0;
+    background-color: #f9ebea;
+    border:2px solid #6e2c00;
+    float: left;
+    z-index: -1;
+    transform-origin: bottom;
+}
+.er{
+    transform: rotate(-60deg);
+    top: -75%;
+    left: -10px;
+    animation: a 1.5s infinite;
+}
+.el{
+    transform: rotate(-30deg);
+    top: -100%;
+    left: 80px;
+    transform-origin: left;
+    animation: b .5s infinite;
+}
+.l1, .l2{
+    position: relative;
+    height: 10px;
+    width: 1px;
+    background-color: black;
+    float: left;
+    top: -60px;
+    left: 15px;
+    transform-origin: bottom;
+}
+.l1{
+    transform: rotate(45deg);
+    top: -40%;
+}
+.l2{
+    transform: rotate(65deg);
+    top: -40%;
+}
+.p1, .p2{
+    height: 34px;
+    width: 26px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #f9ebea;
+    border: 2px solid #6e2c00;
+    float: left;
+    top: 15px;
+    left: -10px;
+}
+.p1{
+    left: -60px;
+}
+.p2{
+    top: -14%;
+}
+@keyframes a{
+    50%{
+        transform: rotate(-90deg);
+    }
+}
+@keyframes b {
+    50% {
+        transform: rotate(40deg);
+    }
+}
+.dot{
+    width:35px;
+    height:35px;
+    position:absolute;
+    background: url(https://image.ibb.co/kyUHab/rose.png);
+    background-size: 100% 100%;
+  }

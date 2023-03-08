@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rabbit.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <title>8/3 </title>
+</head>
+<body>
+    
+
+<div class="face">
+    <div class="e1"></div>
+    <div class="e2">)</div>
+    <div class="m"></div>
+    <div class="h1"></div>
+    <div class="h2"></div>
+    <div class="er"></div>
+    <div class="el"></div>
+    <div class="l1"></div>
+    <div class="l2"></div>
+    <div class="p1"></div>
+    <div class="p2"></div>
+</div>
+<div id="container"></div>
+<svg id="theSvg" viewBox="-120 -30 240 180" enable-background="new 0 0 174 148" xml:space="preserve">
+    <defs>
+      <filter id="f" filterUnits="userSpaceOnUse"  x="-120" y="-30" width="150%" height="150%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="3" dy="5" result="shadow"></feOffset>
+        <feFlood flood-color="rgba(3,0,0,1)" result="color" />
+        <feComposite in ="color" in2="shadow" operator="in" />
+        <feComposite in="SourceGraphic"/>
+      </filter>
+  <path id = "shape"
+  d="M 0 21.054 C 0 21.054 25 -16 63 6 C 93.249 29.888 61 97 0 137 C -63 98 -93.249 29.888 -63 8 C -24.618 -15.165 0 21.054 0 21.054 z
+  "/>
+    <path id="partialPath" />  
+    
+    </defs> 
+  
+   <text dy="-2" filter="url(#f)">
+          <textPath xlink:href="#partialPath"  startOffset="12">...........Happy Women's Day 8/3.................More beauty more luck....................................</textPath> 
+   </text> 
+   <use id="useThePath" xlink:href="#partialPath" stroke="white" stroke-width=".5" stroke-opacity=".5" fill="none" style="display:none;" />
+  </svg>
+<script src="index.js"></script>
+</body>
+</html>
